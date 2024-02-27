@@ -25,3 +25,17 @@
 - useMemo - 성능 최적화를 위한 사용, 특정 값을 반복적으로 호출해야할 때 메모리에 저장하여 필요할 때마다 꺼내서 재사용
 - useCallback - useMemo와 비슷, 특정 함수를 새로 만들지 않고 재사용
 - useReducer - 컴포넌트에서 상태(state)를 다룰 때 사용, useState와 비슷하게 상태를 변경하지만, 복잡한 로직을 다룰 수 있음
+
+### API 연동
+- axios 라이브러리 사용 (POST, GET, PUT, DELETE 등 메소드 요청)
+
+```
+import axios from 'axios';
+
+axios.get('/users/1');
+
+axios.post('/users', {
+  username: 'blabla',
+  name: 'blabla'
+});
+```
